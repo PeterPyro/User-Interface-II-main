@@ -1,0 +1,316 @@
+/* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin-bottom: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: rgb(5, 13, 32);
+  background: radial-gradient(
+    circle,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  height: 100vh;
+}
+
+.nav {
+  margin: 2vh;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  background: rgb(0, 1, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(248, 248, 248) 0%,
+    rgb(255, 255, 255) 35%,
+    rgb(245, 250, 255) 100%
+  );
+}
+
+.navItems {
+  margin-right: 1%;
+  display: flex;
+  align-items: center;
+}
+
+.navTitle {
+  font-size: 3rem;
+  margin-right: 75%;
+  color: black;
+}
+
+nav a,
+footer a {
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 0.7%;
+}
+
+.imgText a {
+  text-decoration: none;
+  font-style: normal;
+  text-shadow: none;
+}
+
+.imgTitle {
+  position: relative;
+  text-align: center;
+}
+
+.imgText {
+  font-style: italic;
+  color: black;
+  font-weight: bold;
+  text-shadow: darkgrey 2px 2px 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  transition: ease-in 1s;
+}
+
+.gallery img:hover {
+  width: 95%;
+  height: 95%;
+}
+
+.imgText h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  padding: 10% 30%;
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+}
+
+h3:hover {
+  background-color: black;
+  color: white;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column div h4 {
+  text-align: center;
+  margin: 0.2rem;
+  padding: 0% 0% 5% 0%;
+}
+
+.column div img {
+  width: 40rem;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 2%;
+  bottom: 0;
+}
+
+footer a {
+  background-color: white;
+}
+
+@media (max-width: 1366px) {
+  .column div img {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navTitle {
+    margin-right: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .column div img {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner {
+    width: 80%;
+  }
+
+  .navTitle {
+    margin-right: 30%;
+  }
+}
+
+@media (max-width: 360px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    width: 80%;
+  }
+
+  .navTitle {
+    margin-right: 10%;
+  }
+
+  .navItems {
+    font-size: 1.2rem;
+  }
+}
